@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Table Shifter | リアルタイム麻雀スコア管理</title>
+  <meta name="description" content="面倒な点数計算はアプリにお任せ。仲間とリアルタイムでスコアを共有できる麻雀アプリです。">
+  <link rel="canonical" href="https://itsutsukarabo.github.io/table-shifter/">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Table Shifter">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://itsutsukarabo.github.io/table-shifter/">
+  <meta property="og:title" content="Table Shifter | リアルタイム麻雀スコア管理">
+  <meta property="og:description" content="面倒な点数計算はアプリにお任せ。仲間とリアルタイムでスコアを共有できる麻雀アプリです。">
+  <meta property="og:image" content="https://itsutsukarabo.github.io/table-shifter/ogp-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Table Shifter - リアルタイム麻雀スコア管理アプリ">
+
+  <!-- X (Twitter) カード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@itsutsuka_lab">
+
+  <!-- iOS Safari のスマートアプリバナー（リダイレクトが効かなかった場合の保険） -->
+  <meta name="apple-itunes-app" content="app-id=6761193511">
+
+  <script>
+    (function () {
+      var IOS_URL = "https://apps.apple.com/jp/app/table-shifter/id6761193511";
+      var ANDROID_URL = "https://play.google.com/store/apps/details?id=com.localsyncboard.app";
+      var ua = navigator.userAgent || "";
+      // iPadOS 13 以降は UA が Mac と同じになるため、タッチ対応で判別する
+      var isIPadOS = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+      if (/android/i.test(ua)) {
+        window.location.replace(ANDROID_URL);
+      } else if (/iPad|iPhone|iPod/.test(ua) || isIPadOS) {
+        window.location.replace(IOS_URL);
+      }
+    })();
+  </script>
+
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #152a4a;
+      color: #f8fafc;
+      text-align: center;
+      padding: 48px 16px 64px;
+    }
+    .hero { max-width: 720px; width: 100%; height: auto; border-radius: 12px; }
+    h1 { font-size: 1.8rem; margin: 32px 0 8px; }
+    p { color: #cbd5e1; margin: 0 0 32px; }
+    .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .store-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #f8fafc;
+      color: #152a4a;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .store-btn:hover { background: #86efac; }
+    footer { margin-top: 48px; font-size: 0.85rem; }
+    footer a { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <img class="hero" src="ogp-image.png" alt="Table Shifter" width="1200" height="630">
+  <h1>Table Shifter</h1>
+  <p>仲間とリアルタイムでスコアを共有できる麻雀アプリ</p>
+  <div class="stores">
+    <a class="store-btn" href="https://apps.apple.com/jp/app/table-shifter/id6761193511">App Store でダウンロード</a>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.localsyncboard.app">Google Play で手に入れよう</a>
+  </div>
+  <footer>
+    <a href="https://itsutsukarabo.github.io/table-shifter-privacy/privacy.html">プライバシーポリシー</a>
+  </footer>
+</body>
+</html>
